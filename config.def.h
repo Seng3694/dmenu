@@ -4,7 +4,7 @@
 static int topbar = 1;                      /* -b  option; if 0, dmenu appears at bottom     */
 static int centered = 1;                    /* -c option; centers dmenu on screen            */
 static int min_width = 500;                 /* minimum width when centered                   */
-static const unsigned int alpha = 25;       /* Amount of opacity. 0xff is opaque             */
+static const unsigned int alpha = 0xff;     /* Amount of opacity. 0xff is opaque             */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
 	"CommitMono:size=14"
@@ -13,8 +13,8 @@ static const char *prompt      = NULL;      /* -p  option; prompt to the left of
 static const char *colors[SchemeLast][2] = {
         /*     fg         bg       */
 	[SchemeNorm] = { "#c1afd0", "#3b2a47" },
-	[SchemeSel] = { "#c1afd0", "#4d375d" },
-	[SchemeOut] = { "#3b2a47", "#bf2653" },
+	[SchemeSel] = { "#3b2a47", "#6538cc" },
+	[SchemeOut] = { "#3b2a47", "#6538cc" },
 };
 
 static const unsigned int alphas[SchemeLast][2] = {
